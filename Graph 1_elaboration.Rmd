@@ -31,8 +31,7 @@ dismemberments <- dismemberments |>
 ```{r}
 graph1_black_ <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) +
   geom_bar(stat = "count") +
-  labs(title = "Patterns of Dismemberments in Barranquilla, Colombia (2013-2022)",
-       x = NULL, 
+  labs(x = NULL, 
        y = "Number of Dismemberments",
        fill = "Function") +
   theme_minimal() +
@@ -40,11 +39,12 @@ graph1_black_ <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
     strip.background = element_rect(fill = "gray90", color = NA),
-    strip.text = element_text(face = "bold", color = "black")
+    strip.text = element_text(face = "bold", size = 11, margin = margin(t = 5, b = 5)),
+    panel.spacing = unit(0.8, "lines")
   ) +
   scale_fill_grey(start = 0.1, end = 0.7) +
   facet_wrap(~competition, 
-             labeller = as_labeller(c(`0` = "Established criminal governance regime",
+             labeller = as_labeller(c(`0` = "Criminal hegemony",
                                       `1` = "Inter-criminal competition")))
 
 ggsave("dismemberment_graph_greys.pdf", plot = last_plot(), width = 7, height = 5)
@@ -56,8 +56,7 @@ ggsave("dismemberment_graph_greys.png", plot = last_plot(), width = 7, height = 
 ```{r}
 graph1_colors <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) +
   geom_bar(stat = "count") +
-  labs(title = "Patterns of Dismemberments in Barranquilla, Colombia (2013-2022)",
-       x = NULL, 
+  labs(x = NULL, 
        y = "Number of Dismemberments",
        fill = "Function") +
   theme_minimal() +
@@ -65,11 +64,12 @@ graph1_colors <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
     strip.background = element_rect(fill = "gray90", color = NA),
-    strip.text = element_text(face = "bold", color = "black")
+    strip.text = element_text(face = "bold", size = 11, margin = margin(t = 5, b = 5)),
+    panel.spacing = unit(0.8, "lines")
   ) +
     scale_fill_brewer(palette = "Set2") +
   facet_wrap(~competition, 
-             labeller = as_labeller(c(`0` = "Established criminal governance regime",
+             labeller = as_labeller(c(`0` = "Criminal hegemony",
                                       `1` = "Inter-criminal competition")))
 
 ggsave("dismemberment_graph_colors.pdf", plot = last_plot(), width = 7, height = 5)
