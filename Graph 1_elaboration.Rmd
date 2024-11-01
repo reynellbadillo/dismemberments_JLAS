@@ -1,0 +1,54 @@
+---
+title: "Graph 1"
+author: "Reynell Badillo Sarmiento" "Luis Trejos Rosero"
+date: "2024-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r cars}
+dismemberments <- read_csv("./Dismemberments_Barranquilla.csv")
+```
+
+## Graph 1
+
+```{r}
+#Add an indicator of competition or not
+dismemberments <- dismemberments |> 
+  mutate(competition = if_else(
+    year == 2013 | year == 2016 | year == 2017 | 
+      year == 2021 | year == 2022, 1, 0
+   )) |> 
+  relocate(competition, .after = year)
+```
+
+```{r}
+graph1 <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) +
+  geom_bar(stat = "count") +
+  labs(title = "Patterns of Dismemberments in Barranquilla, Colombia (2013-2022)",
+       subtitle = "Grouped by Years with Criminal Hegemony or Inter-criminal Competition",
+       x = NULL, 
+       y = "Number of Dismemberments",
+       fill = "Function") +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    strip.background = element_rect(fill = "gray90", color = NA),
+    strip.text = element_text(face = "bold", color = "black")
+  ) +
+  scale_fill_grey(start = 0.1, end = 0.7) +
+  facet_wrap(~competition, 
+             labeller = as_labeller(c(`0` = "Established criminal governance regime",
+                                      `1` = "Inter-criminal competition")))
+
+ggsave("dismemberment_graph.pdf", plot = last_plot(), width = 7, height = 5)
+ggsave("dismemberment_graph.png", plot = last_plot(), width = 7, height = 5, dpi = 300)
+
+
+```
+
