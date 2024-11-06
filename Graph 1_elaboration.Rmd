@@ -33,7 +33,7 @@ graph1_black_ <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
   geom_bar(stat = "count") +
   labs(x = NULL, 
        y = "Number of Dismemberments",
-       fill = "Function") +
+       fill = "Function of the Dismemberment") +
   theme_minimal() +
   theme(
     axis.text.x = element_blank(),
@@ -44,8 +44,8 @@ graph1_black_ <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
   ) +
   scale_fill_grey(start = 0.1, end = 0.7) +
   facet_wrap(~competition, 
-             labeller = as_labeller(c(`0` = "Criminal hegemony",
-                                      `1` = "Inter-criminal competition")))
+             labeller = as_labeller(c(`0` = "Criminal hegemony \n 2013-2015, 2018-2020",
+                                      `1` = "Inter-criminal competition \n 2016-2017, 2021-2022")))
 
 ggsave("dismemberment_graph_greys.pdf", plot = last_plot(), width = 7, height = 5)
 ggsave("dismemberment_graph_greys.png", plot = last_plot(), width = 7, height = 5, dpi = 600)
@@ -58,7 +58,7 @@ graph1_colors <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
   geom_bar(stat = "count") +
   labs(x = NULL, 
        y = "Number of Dismemberments",
-       fill = "Function") +
+       fill = "Function of the Dismemberment") +
   theme_minimal() +
   theme(
     axis.text.x = element_blank(),
@@ -69,8 +69,8 @@ graph1_colors <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
   ) +
     scale_fill_brewer(palette = "Set2") +
   facet_wrap(~competition, 
-             labeller = as_labeller(c(`0` = "Criminal hegemony",
-                                      `1` = "Inter-criminal competition")))
+             labeller = as_labeller(c(`0` = "Criminal hegemony \n 2013-2015, 2018-2020",
+                                      `1` = "Inter-criminal competition \n 2016-2017, 2021-2022")))
 
 ggsave("dismemberment_graph_colors.pdf", plot = last_plot(), width = 7, height = 5)
 ggsave("dismemberment_graph_colors.png", plot = last_plot(), width = 7, height = 5, dpi = 600)
