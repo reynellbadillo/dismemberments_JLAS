@@ -20,7 +20,7 @@ dismemberments <- read_csv("./Dismemberments_Barranquilla.csv")
 #Add an indicator of competition or not
 dismemberments <- dismemberments |> 
   mutate(competition = if_else(
-    year == 2013 | year == 2016 | year == 2017 | 
+    year == 2013 | year == 2016 | year == 2017 |
       year == 2021 | year == 2022, 1, 0
    )) |> 
   relocate(competition, .after = year)
