@@ -67,7 +67,7 @@ graph1_colors <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
     strip.text = element_text(face = "bold", size = 11, margin = margin(t = 5, b = 5)),
     panel.spacing = unit(0.8, "lines")
   ) +
-    scale_fill_brewer(palette = "Set2") +
+    scale_fill_brewer(palette = "Greens") +
   facet_wrap(~competition, 
              labeller = as_labeller(c(`0` = "Criminal hegemony \n 2013-2015, 2018-2020",
                                       `1` = "Inter-criminal competition \n 2016-2017, 2021-2022")))
