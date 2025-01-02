@@ -24,16 +24,24 @@ dismemberments <- dismemberments |>
       year == 2021 | year == 2022, 1, 0
    )) |> 
   relocate(competition, .after = year)
+
+dismemberments <- dismemberments |> 
+  rename(function_dis = `function`) |> 
+  mutate(function_dis = if_else(
+    function_dis == "External", "Deterring rivals", function_dis
+  ))
 ```
 
 
+
 ## Graph 1 (Scales of greys)
+
 ```{r}
-graph1_black_ <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) +
+graph1_black_ <- ggplot(dismemberments, aes(x = function_dis, fill = function_dis)) +
   geom_bar(stat = "count") +
   labs(x = NULL, 
-       y = "Number of Dismemberments",
-       fill = "Function of the Dismemberment") +
+       y = "Dismemberments",
+       fill = "Function of the dismemberment") +
   theme_minimal() +
   theme(
     axis.text.x = element_blank(),
@@ -44,8 +52,8 @@ graph1_black_ <- ggplot(dismemberments, aes(x = `function`, fill = `function`)) 
   ) +
   scale_fill_grey(start = 0.1, end = 0.7) +
   facet_wrap(~competition, 
-             labeller = as_labeller(c(`0` = "Criminal hegemony \n 2013-2015, 2018-2020",
-                                      `1` = "Inter-criminal competition \n 2016-2017, 2021-2022")))
+             labeller = as_labeller(c(`0` = "Criminal hegemony \n 2013-15, 2018-20",
+                                      `1` = "Inter-criminal competition \n 2016-17, 2021-22")))
 
 ggsave("dismemberment_graph_greys.pdf", plot = last_plot(), width = 7, height = 5)
 ggsave("dismemberment_graph_greys.png", plot = last_plot(), width = 7, height = 5, dpi = 600)
