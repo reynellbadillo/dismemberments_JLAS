@@ -1,26 +1,26 @@
 id,year,neighborhood,profile,profile_reason,function,public,remains,specificities,presumed_responsible,age
-1,2013,Las Flores,Rival,Member of a rival armed group,External,Public,Left on a public road,Limbs torso and head in different locations,Los Rastrojos (Los Costenos),28
-2,2013,San Roque,Member of the armed group,Stole money from the armed group,Internal discipline,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Rastrojos (Los Costenos),30
-3,2013,Siape,Rival,Member of a rival armed group,External,Public,Left on a public road,Dismembered body in the same location,Los Rastrojos (Los Costenos),37
-4,2013,Bendicion de Dios,Rival,Member of a rival armed group,External,Public,Piled in sacks/bags,Dismembered body in the same location,Los Rastrojos (Los Costenos),21
-5,2013,Rebolo,Non-criminal civilian,Cheated with the partner of a member of the armed group,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,Los Rastrojos (Los Costenos),21
-6,2014,La Chinita,Member of the armed group,Stole money from the armed group,Internal discipline,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Rastrojos (Los Costenos),17
-7,2015,Bendicion de Dios,Criminal civilian,Unauthorized criminal activities / unauthorized killings,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,"Alias ""El Oso"" Elkin Bladimir Olivo Mercado",33
-8,2015,La Luz,Criminal civilian,Unauthorized killings,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Papalopez,19
+1,2013,Las Flores,Rival,Member of a rival armed group,External,Public,Left on a public road,Limbs torso and head in different locations,Los Rastrojos (Los Costeños),28
+2,2013,San Roque,Member of the armed group,Stole money from the armed group,Internal discipline,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Rastrojos (Los Costeños),30
+3,2013,Siape,Rival,Member of a rival armed group,External,Public,Left on a public road,Dismembered body in the same location,Los Rastrojos (Los Costeños),37
+4,2013,Bendición de Dios,Rival,Member of a rival armed group,External,Public,Piled in sacks/bags,Dismembered body in the same location,Los Rastrojos (Los Costeños),21
+5,2013,Rebolo,Non-criminal civilian,Cheated with the partner of a member of the armed group,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,Los Rastrojos (Los Costeños),21
+6,2014,La Chinita,Member of the armed group,Stole money from the armed group,Internal discipline,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Rastrojos (Los Costeños),17
+"7,2015,Bendición de Dios,Criminal civilian,Unauthorized criminal activities / unauthorized killings,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,""Alias """"El Oso"""" Elkin Bladimir Olivo Mercado"",33"
+8,2015,La Luz,Criminal civilian,Unauthorized killings,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Papalópez,19
 9,2016,Rebolo,Criminal civilian,Unauthorized criminal activities,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,Los 40 negritos,15
-10,2016,La Chinita,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Papalopez,27
-11,2016,Villanueva,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Private,Hidden,Unknown place,Los Costenos,19
-12,2016,,Member of the armed group,Betrayal (unauthorized killings),Internal discipline,Private,Hidden,Unknown place,Los Costenos,
-13,2016,Cascaron,Non-criminal civilian,Cheated with the partner of a member of the armed group,Enforce social order,Public,Piled in sacks/bags,Styrofoam coolers with different human remains,Los Costenos,22
-14,2017,La Luz,Member of the armed group,Betrayal (unauthorized killings),Internal discipline,Private,Hidden,Unknown place,Los Costenos,
-15,2017,Bendicion de Dios,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,Los Costenos,
-16,2017,El Paraiso,Member of the armed group,Betrayal (unauthorized killings),Internal discipline,Private,Hidden,Unknown place,Los Costenos,
-17,2017,Las Flores,Member of the armed group,Betrayal,Internal discipline,Private,Hidden,Unknown place,Los Costenos,
-18,2018,Bendicion de Dios,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,Los Costenos,37
-19,2018,Villa del Rosario,Criminal civilian,Unauthorized criminal activities,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Costenos,19
-20,2018,Villa del Rosario,Criminal civilian,Unauthorized criminal activities,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Costenos,24
+10,2016,La Chinita,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Papalópez,27
+11,2016,Villanueva,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Private,Hidden,Unknown place,Los Costeños,19
+12,2016,,Member of the armed group,Betrayal (unauthorized killings),Internal discipline,Private,Hidden,Unknown place,Los Costeños,
+13,2016,Cascarón,Non-criminal civilian,Cheated with the partner of a member of the armed group,Enforce social order,Public,Piled in sacks/bags,Styrofoam coolers with different human remains,Los Costeños,22
+14,2017,La Luz,Member of the armed group,Betrayal (unauthorized killings),Internal discipline,Private,Hidden,Unknown place,Los Costeños,
+15,2017,Bendición de Dios,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,Los Costeños,
+16,2017,El Paraíso,Member of the armed group,Betrayal (unauthorized killings),Internal discipline,Private,Hidden,Unknown place,Los Costeños,
+17,2017,Las Flores,Member of the armed group,Betrayal,Internal discipline,Private,Hidden,Unknown place,Los Costeños,
+18,2018,Bendición de Dios,Non-criminal civilian,Collaborated with the authorities,Enforce social order,Public,Left on a public road,Limbs torso and head in different locations,Los Costeños,37
+19,2018,Villa del Rosario,Criminal civilian,Unauthorized criminal activities,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Costeños,19
+20,2018,Villa del Rosario,Criminal civilian,Unauthorized criminal activities,Enforce social order,Public,Piled in sacks/bags,Limbs torso and head in different locations,Los Costeños,24
 21,2021,Modelo,Member of the armed group,Betrayal,Internal discipline,Private,Hidden,Unknown place,,
-22,2021,Simon Bolivar,Rival,Member of a rival armed group,External,Public,Live transmission in social media,Limbs torso and head in different locations,Los Costenos,25
+22,2021,Simón Bolívar,Rival,Member of a rival armed group,External,Public,Live transmission in social media,Limbs torso and head in different locations,Los Costeños,25
 23,2022,Los Almendros,Rival,Member of a rival armed group,External,Public,Left on a public road,Limbs torso and head in different locations,Los Rastrojos-Costenos,20-30
 24,2022,7 de abril,Rival,Member of a rival armed group,External,Public,Left on a public road,Limbs torso and head in different locations,Los Rastrojos-Costenos,34
 25,2022, , Criminal civilian,Unauthorized criminal activities,Enforce social order,Public,Left on a public road,Dismembered body in the same location,AGC,23,
